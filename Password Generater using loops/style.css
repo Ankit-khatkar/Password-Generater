@@ -1,0 +1,43 @@
+#container{
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    width: 50vw;
+    margin-top: 15%;
+    margin-left: 25%;
+    border-radius: 10px;
+    background-color: darkgray;
+    padding: 10px 0px 10px 10px;
+
+}
+#strong_pass{
+    border: 2px solid aqua;
+    background-color: aliceblue;
+    width: 75px;
+    height: 25px;
+    border-radius: 5px;
+    align-items: center;
+}
+#week_pass{
+    border: 2px solid aqua;
+    background-color: aliceblue;
+    width: 75px;
+    height: 25px;
+    border-radius: 5px;
+    align-items: center;
+}
+.btn{
+    border: 2px solid black;
+    border-radius: 19px;
+    background-color: rgba(0, 255, 255, 0.466);
+    font-weight: bold;
+    height: 33px;
+    width: 90px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0  17px 50px  0 rgba(0, 0, 0, 0.19);
+}

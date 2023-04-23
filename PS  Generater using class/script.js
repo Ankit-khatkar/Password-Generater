@@ -20,4 +20,21 @@ class password{
     }}
 }
 let p1=new password();
-console.log("Your strong password is :- "+p1.getpass(Number.parseInt(pass_len=prompt('Enter your password length.'))));
+let fnl_pass=p1.getpass(Number.parseInt(pass_len=prompt('Enter your password length.')));
+document.getElementById("strong_pass").value=fnl_pass;
+console.log("Your strong password is :- "+fnl_pass);
+
+function copiedtxt() {
+    // Get the text field
+    var copyText = document.getElementById("strong_pass");
+  
+    // Select the text field
+    copyText.select();
+    copyText.setSelectionRange(0, 30); // For mobile devices
+  
+    // Copy the text inside the text field
+    navigator.clipboard.writeText(copyText.value);
+    
+    // Alert the copied text
+    alert("Copied Password:- "+ copyText.value);
+}

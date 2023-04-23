@@ -24,3 +24,37 @@ if (
 }
   console.log(`We recomended your strong password is ${strng_pass}`);
 console.log(`Your weak password is ${weak_pass}`);
+document.getElementById("strong_pass").value=strng_pass;
+document.getElementById("week_pass").value=weak_pass;
+
+// for copy strong password.
+function myfun1() {
+  // Get the text field
+  var copyText = document.getElementById("strong_pass");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 30); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied Strong Password:- "+ copyText.value);
+}
+
+// for copy week password.
+function myfun2() {
+  // Get the text field
+  var copyText = document.getElementById("week_pass");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 30); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("Copied Weak Password:- "+ copyText.value);
+}
